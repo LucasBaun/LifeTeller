@@ -33,21 +33,27 @@ div.box {
   max-width: 900px;
 }
 
-.box input {
+input {
   margin: 5px;
 }
 
-.box button {
+button {
   border: none;
   padding: 6px 8px;
   border-radius: 4px;
   font-weight: bold;
   margin: 0;
   background-color: #DB504A;
-  transition: 0.2s;
+  /* transition: 0.2s; */
   font-size: 19pt;
   color: #5a5b5b;
   font-family: 'PT Sans';
+}
+
+button:hover{
+  background-color: #e06762;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 footer {
