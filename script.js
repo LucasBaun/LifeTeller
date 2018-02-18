@@ -7,8 +7,9 @@ function myFunction() {
     if (month < 7) {
       if (!age) {
       document.getElementById('number').style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
-      }
-      else if ((age >= 0 ) && (age < 2)) {
+      } else if (age < 0) {
+        var age = ("Du är inte född?");
+      } else if ((age >= 0 ) && (age < 2)) {
         var age = ("Du är en bebis");
       } else if ((age >= 2) && (age <= 7)) {
         var age = ("Du går på Förskola");
@@ -20,16 +21,17 @@ function myFunction() {
         var age =("Du jobbar eller pluggar");
       } else if ((age >= 23) && (age < 65)) {
         var age =("Du jobbar förmodligen");
-      } else if ((age >= 65) && (age <=100)) {
+      } else if ((age >= 65) && (age <= 99)) {
         var age =("Du är pensionär");
-      } else if (age > 100 ) {
+      } else if (age > 99 ) {
         var age =("Förmodligen död");
       }
     } else {
-      if (!age) {
+      if (!age){
       document.getElementById('number').style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
-      }
-      else if ((age >= 0 ) && (age < 1)) {
+      } else if (age < 0) {
+        var age = ("Du är inte född?");
+      } else if ((age >= 0 ) && (age < 1)) {
         var age = ("Du är en bebis");
       } else if ((age >= 1) && (age <= 7)) {
         var age = ("Du går på Förskola");
@@ -43,7 +45,7 @@ function myFunction() {
         var age =("Du jobbar förmodligen");
       } else if ((age >= 65) && (age <=99)) {
         var age =("Du är pensionär");
-      } else if (age > 99 ) {
+      } else if (age > 99 ){
         var age =("Förmodligen död");
       }
     }
