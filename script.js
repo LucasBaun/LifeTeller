@@ -1,8 +1,9 @@
 
 function myFunction() {
-    var age = 2018 - document.getElementById("number").value;
-    var d = new Date();
-    var month = d.getMonth();
+    var date = new Date();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+    var age = year - document.getElementById("number").value;
 
     if (month < 7) {
       if (age < 0) {
@@ -23,7 +24,7 @@ function myFunction() {
         var age =("Du är pensionär");
       } else if ((age > 99 ) && (age < 2018)) {
         var age =("Förmodligen död");
-      } else if (age = 2018) {
+      } else if (age = year) {
         document.getElementById('number').style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
         var age =("");
         alert("Du skrev inte in något år!");
@@ -48,7 +49,7 @@ function myFunction() {
         var age =("Du är pensionär");
       } else if ((age > 99 ) && (age < 2018)) {
         var age =("Förmodligen död");
-      } else if (age = 2018) {
+      } else if (age = year) {
         document.getElementById('number').style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
         var age =("");
         alert("Du skrev inte in något år!");
@@ -56,10 +57,3 @@ function myFunction() {
     }
     document.getElementById("result").innerHTML = age;
 }
-
-
-if (!age) {
-   document.getElementById('number').style.backgroundColor = 'rgba(255, 0, 0, 0.3)'
- } else {
-
- }
